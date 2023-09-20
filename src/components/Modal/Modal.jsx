@@ -8,7 +8,6 @@ import alternate from 'images/car.jpeg';
 const modalRoot = document.querySelector('#modal-root');
 
 export const Modal = ({ car, onClose }) => {
-  console.log(car);
   const {
     id,
     year,
@@ -132,5 +131,5 @@ export const Modal = ({ car, onClose }) => {
 
 Modal.propTypes = {
   onClose: PropTypes.func.isRequired,
-  car: PropTypes.array.isRequired,
+  car: PropTypes.object.isRequired,
 };

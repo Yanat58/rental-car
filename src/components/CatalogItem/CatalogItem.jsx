@@ -27,10 +27,10 @@ export const CatalogItem = ({ car }) => {
   const handleToggleFavorite = () => {
     if (favoriteCheck) {
       dispatch(removeFromFavorites(car));
-      Notify.success('Deleted from favorites');
+      Notify.success('Deleted from favorites', { timeout: 2000 });
     } else {
       dispatch(addToFavorites(car));
-      Notify.success('Added your favorites');
+      Notify.success('Added your favorites', { timeout: 2000 });
     }
   };
 
@@ -98,5 +98,5 @@ export const CatalogItem = ({ car }) => {
 };
 
 CatalogItem.prototype = {
-  car: PropTypes.array.isRequired,
+  car: PropTypes.object.isRequired,
 };

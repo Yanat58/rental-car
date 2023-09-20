@@ -21,10 +21,6 @@ const CatalogCars = () => {
     });
   };
   scrollToTop();
-  // window.scrollBy({
-  //   top: cardHeight * -100,
-  //   behavior: 'smooth',
-  // });
 
   return (
     <Container>

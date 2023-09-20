@@ -8,7 +8,7 @@ export const fetchCars = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const res = await axios.get(`/adverts`);
-      console.log(res.data);
+
       return res.data;
     } catch (error) {
       return rejectWithValue(error.message);
