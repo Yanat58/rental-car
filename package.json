@@ -2,6 +2,7 @@
   "name": "rental-car-project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Yanat58.github.io/rental-car/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.17.0",
